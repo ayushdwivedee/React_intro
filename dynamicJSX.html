@@ -11,9 +11,15 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       // Your JSX code here
+      // Ques 1:
       let root =document.getElementById("root");
-      const str=<p>Sieze the day </p>
-      ReactDOM.render(str,root)
+         
+      ReactDOM.render( <p>Sieze the day </p>,root)
+
+      //Ques 2:
+      const para2=" Sieze the day 2" 
+      let pTag=<p>{para2}</p>
+      ReactDOM.render( pTag,root)
     </script>
   </body>
 </html>
