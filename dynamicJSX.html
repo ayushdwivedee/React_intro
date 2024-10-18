@@ -12,14 +12,27 @@
     <script type="text/babel">
       // Your JSX code here
       // Ques 1:
-      let root =document.getElementById("root");
-         
-      ReactDOM.render( <p>Sieze the day </p>,root)
+      let root = document.getElementById("root");
+
+      ReactDOM.render("Sieze the day </p>", root);
 
       //Ques 2:
-      const para2=" Sieze the day 2" 
-      let pTag=<p>{para2}</p>
-      ReactDOM.render( pTag,root)
+      const para2 = " Sieze the day 2";
+      let pTag = <p>{para2}</p>;
+      ReactDOM.render(pTag, root);
+
+      //Ques 3:
+      const paraBool = false;
+
+      const Simple = () => {
+        return <p>It's your Day</p>;
+      };
+
+      const Dynamic = () => {
+        return <p>Better luck next day</p>;
+      };
+
+      ReactDOM.render(paraBool ? <Simple /> : <Dynamic />, root);
     </script>
   </body>
 </html>
